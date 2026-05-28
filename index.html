@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#1a2436" />
+  <title>Digital Product Passport · Paddington Bear hoodie · Batch #A2847</title>
+  <meta name="description" content="Public Digital Product Passport for Paddington Bear hoodie (Batch #A2847). Issued by CarbonQuota TextilesPEF for STUDIOCANAL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: oklch(0.985 0 0);
+      --fg: oklch(0.22 0.025 230);
+      --card: oklch(1 0 0);
+      --primary: oklch(0.62 0.09 195);
+      --accent: oklch(0.94 0.025 195);
+      --muted: oklch(0.965 0.005 230);
+      --muted-fg: oklch(0.52 0.02 230);
+      --success: oklch(0.6 0.13 160);
+      --success-soft: oklch(0.94 0.06 160);
+      --success-fg: oklch(0.30 0.08 160);
+      --border: oklch(0.92 0.008 230);
+      --navy: oklch(0.22 0.025 230);
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Barlow', ui-sans-serif, system-ui, sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+
+    /* Header */
+    .topbar {
+      background: var(--navy);
+      color: white;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .topbar .brand {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .topbar .brand .teal { color: oklch(0.68 0.09 190); }
+    .topbar .verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: oklch(0.78 0.10 160);
+    }
+    .topbar .verified::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background: var(--success);
+      border-radius: 50%;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 24px 20px 20px;
+      background: linear-gradient(180deg, var(--navy), oklch(0.28 0.04 230));
+      color: white;
+    }
+    .hero .label {
+      font-size: 0.6875rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: oklch(0.78 0.02 230);
+      margin: 0 0 4px;
+      font-weight: 600;
+    }
+    .hero h1 {
+      font-size: 1.625rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin: 0 0 6px;
+      line-height: 1.2;
+    }
+    .hero .meta {
+      font-size: 0.875rem;
+      color: oklch(0.78 0.02 230);
+      margin: 0;
+    }
+    .hero-stat {
+      margin-top: 18px;
+      background: oklch(0.30 0.04 230);
+      border: 1px solid oklch(0.36 0.04 230);
+      border-radius: 12px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .hero-stat .num {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1;
+      color: white;
+    }
+    .hero-stat .lbl {
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: oklch(0.78 0.02 230);
+      font-weight: 600;
+      text-align: right;
+    }
+    .hero-stat .lbl .big {
+      display: block;
+      color: white;
+      font-size: 0.875rem;
+      letter-spacing: 0;
+      text-transform: none;
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    /* Content sections */
+    .content { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+    }
+    .section h2 {
+      font-size: 0.6875rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted-fg);
+      font-weight: 600;
+      margin: 0 0 12px;
+    }
+    .kv {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 0.9375rem;
+    }
+    .kv:last-child { border-bottom: none; }
+    .kv .k { color: var(--muted-fg); }
+    .kv .v {
+      color: var(--fg);
+      font-weight: 600;
+      text-align: right;
+    }
+
+    /* Lifecycle bars */
+    .lc-row {
+      display: grid;
+      grid-template-columns: 1fr 80px;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 0.875rem;
+    }
+    .lc-row:last-child { border-bottom: none; }
+    .lc-row .label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+      grid-column: span 2;
+    }
+    .lc-row .name { color: var(--fg); font-weight: 500; }
+    .lc-row .pct { color: var(--muted-fg); font-variant-numeric: tabular-nums; font-size: 0.8125rem; }
+    .lc-bar {
+      grid-column: span 2;
+      height: 8px;
+      background: var(--muted);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .lc-bar > div {
+      height: 100%;
+      border-radius: 999px;
+    }
+    .lc-fibre  > .lc-bar > div { width: 42%; background: oklch(0.55 0.10 200); }
+    .lc-dyeing > .lc-bar > div { width: 31%; background: oklch(0.68 0.10 175); }
+    .lc-finish > .lc-bar > div { width: 14%; background: oklch(0.72 0.12 145); }
+    .lc-trans  > .lc-bar > div { width: 8%;  background: oklch(0.62 0.07 240); }
+    .lc-pack   > .lc-bar > div { width: 5%;  background: oklch(0.78 0.10 95);  }
+
+    /* Compliance */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--success-soft);
+      color: var(--success-fg);
+      border: 1px solid oklch(0.78 0.08 160);
+    }
+    .chip::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--success);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      color: var(--muted-fg);
+      font-size: 0.75rem;
+      border-top: 1px solid var(--border);
+      margin-top: 8px;
+    }
+    .footer .powered {
+      font-weight: 600;
+      color: var(--fg);
+    }
+    .footer .powered .teal { color: var(--primary); }
+    .footer .ts {
+      margin-top: 4px;
+      font-size: 0.6875rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* Make sure it looks fine on tablets/desktop too — cap width */
+    @media (min-width: 640px) {
+      body { max-width: 480px; margin: 0 auto; box-shadow: 0 0 24px rgba(0,0,0,0.08); min-height: 100vh; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="teal">Textiles</span>PEF</div>
+    <div class="verified">Verified · ESPR DPP</div>
+  </header>
+
+  <section class="hero">
+    <p class="label">Digital Product Passport</p>
+    <h1>Paddington Bear hoodie</h1>
+    <p class="meta">Batch #A2847 · 500 units · STUDIOCANAL Licensing</p>
+
+    <div class="hero-stat">
+      <span class="num">8.42<span style="font-size: 1rem; font-weight: 500; margin-left: 4px; color: oklch(0.78 0.02 230);">kg</span></span>
+      <span class="lbl">CO2e per unit<span class="big">20.05 kg CO2e per kg</span></span>
+    </div>
+  </section>
+
+  <main class="content">
+    <section class="section">
+      <h2>Product</h2>
+      <div class="kv"><span class="k">SKU</span><span class="v">SC-PAD-HD-A2847</span></div>
+      <div class="kv"><span class="k">Composition</span><span class="v">80% Cotton · 20% Polyester</span></div>
+      <div class="kv"><span class="k">Net weight</span><span class="v">0.42 kg</span></div>
+      <div class="kv"><span class="k">Licence</span><span class="v">STUDIOCANAL · Paddington™</span></div>
+      <div class="kv"><span class="k">Made in</span><span class="v">Porto, Portugal</span></div>
+    </section>
+
+    <section class="section">
+      <h2>Lifecycle breakdown · CO2e per unit</h2>
+      <div class="lc-row lc-fibre">
+        <div class="label-row"><span class="name">Fibre production</span><span class="pct">3.54 kg · 42%</span></div>
+        <div class="lc-bar"><div></div></div>
+      </div>
+      <div class="lc-row lc-dyeing">
+        <div class="label-row"><span class="name">Dyeing</span><span class="pct">2.61 kg · 31%</span></div>
+        <div class="lc-bar"><div></div></div>
+      </div>
+      <div class="lc-row lc-finish">
+        <div class="label-row"><span class="name">Finishing &amp; assembly</span><span class="pct">1.18 kg · 14%</span></div>
+        <div class="lc-bar"><div></div></div>
+      </div>
+      <div class="lc-row lc-trans">
+        <div class="label-row"><span class="name">Transport</span><span class="pct">0.67 kg · 8%</span></div>
+        <div class="lc-bar"><div></div></div>
+      </div>
+      <div class="lc-row lc-pack">
+        <div class="label-row"><span class="name">Packaging</span><span class="pct">0.42 kg · 5%</span></div>
+        <div class="lc-bar"><div></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Method &amp; provenance</h2>
+      <div class="kv"><span class="k">Calc engine</span><span class="v">TextilesPEF v3.4</span></div>
+      <div class="kv"><span class="k">Sources</span><span class="v">Ecoinvent · Defra · WRAP</span></div>
+      <div class="kv"><span class="k">Calculation time</span><span class="v">0.21 s</span></div>
+      <div class="kv"><span class="k">Audit hash</span><span class="v" style="font-family: ui-monospace, monospace; font-size: 0.75rem;">a2847-v3.4-2c7e9</span></div>
+    </section>
+
+    <section class="section">
+      <h2>Compliance</h2>
+      <div class="chips">
+        <span class="chip">ESPR DPP</span>
+        <span class="chip">EU PEF</span>
+        <span class="chip">GHG Protocol</span>
+        <span class="chip">CSRD ready</span>
+        <span class="chip">ISO 14067</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="powered">Powered by <span class="teal">Textiles</span>PEF · CarbonQuota</div>
+    <div class="ts">Finalised 28 May 2026 · Audit-traceable</div>
+  </footer>
+</body>
+</html>
